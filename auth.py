@@ -79,7 +79,7 @@ def create_user(user_data: dict):
     user_data["created_at"] = datetime.utcnow()
     users_db[user_data["email"]] = user_data
     return user_data
-
+ 
 
 def authenticate_user(email: str, password: str):
     """Authenticate user with email and password"""
